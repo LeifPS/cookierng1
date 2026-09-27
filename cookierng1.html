@@ -2,6 +2,11 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<!-- Canopy (canopybase.pages.dev): Spielstand mit der Canopy ID abgleichen, wenn das Spiel im Canopy-Player läuft.
+     Direkt auf dieser Seite: nur ein kleiner Knopf "In Canopy ID übertragen". Muss vor den Spiel-Skripten stehen. -->
+<script src="https://canopybase.pages.dev/sdk/canopy-sdk.js"></script>
+<script src="https://canopybase.pages.dev/sdk/canopy-bridge.js"></script>
+<script>CanopyBridge.init({ game: 'cookie-rng', prefixes: ['cookierng_', 'felixfix'] });</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>🍪 Cookie RNG</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
