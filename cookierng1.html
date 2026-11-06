@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<script src="lgh-vorlade.js"></script><!--lgh-->
+
+
 <meta charset="UTF-8">
 <!-- Canopy (canopybase.pages.dev): Spielstand mit der Canopy ID abgleichen, wenn das Spiel im Canopy-Player läuft.
      Direkt auf dieser Seite: nur ein kleiner Knopf "In Canopy ID übertragen". Muss vor den Spiel-Skripten stehen. -->
@@ -6885,6 +6888,7 @@ document.getElementById('felixfix-btn').addEventListener('click', function() {
   // Rangliste lazy laden (erst wenn Tab geöffnet)
 })();
 
-</script></body>
+</script><!--lgh-start--><script>window.LGH_SPIEL='cookierng';window.LGH_POS='bc';window.LGH_OHNE_MENUE=true;</script><script src="lgh-modul.js"></script><!--lgh-ende-->
+</body>
 
 </html>
