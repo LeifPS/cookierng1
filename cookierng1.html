@@ -4,6 +4,7 @@
 <script src="lgh-vorlade.js"></script><!--lgh-->
 
 
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>🍪 Cookie RNG</title>
@@ -1019,6 +1020,13 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;disp
       <div class="set-row" id="set-sound">
         <div class="set-info"><div class="set-name">Sound-Effekte</div><div class="set-desc">Töne beim Rollen und bei seltenen Keksen</div></div>
         <div class="set-toggle" data-key="soundEnabled" data-default="true"></div>
+      </div>
+
+      <!-- Abschnitt: Spielstand -->
+      <div class="set-section-label" style="margin-top:10px;">💾 Spielstand</div>
+      <div class="set-row">
+        <div class="set-info"><div class="set-name">Spielstand-Code</div><div class="set-desc">Fortschritt auf ein anderes Gerät übertragen</div></div>
+        <button type="button" class="set-select" onclick="window.LGH&&LGH.oeffnen()">Öffnen</button>
       </div>
 
       <!-- Abschnitt: Cutscene -->
@@ -6883,7 +6891,7 @@ document.getElementById('felixfix-btn').addEventListener('click', function() {
   // Rangliste lazy laden (erst wenn Tab geöffnet)
 })();
 
-</script><!--lgh-start--><script>window.LGH_SPIEL='cookierng';window.LGH_POS='bc';window.LGH_OHNE_MENUE=true;</script><script src="lgh-modul.js"></script><!--lgh-ende-->
+</script><!--lgh-start--><script>window.LGH_SPIEL='cookierng';window.LGH_POS='bc';window.LGH_EIGENER_KNOPF=true;</script><script src="lgh-modul.js"></script><!--lgh-ende-->
 </body>
 
 </html>
